@@ -1,12 +1,14 @@
+import style from './Weather.module.css';
+
 const Weather = (props) => {
     const {weather,isDayTime,city}=props
     return (
-        <div>
-            <p>{city}</p>
-            {weather && weather.main && weather.main.temp && <p>{weather.main.temp}°C</p>}
-            {weather && weather.weather && weather.weather[0] && weather.weather[0].description && <p>{weather.weather[0].description}</p>}
-            {weather && weather.weather && weather.weather[0] && weather.weather[0].icon && <img src={`https://openweathermap.org/img/wn/${weather.weather[0].icon}@2x.png`} />}
-            {isDayTime && <div>Jour</div>}
+        <div className={style.content}>
+            <div className={style.city}>{city}</div>
+            {weather && weather.weather && weather.weather[0] && weather.weather[0].icon && <img className={style.img} src={`https://openweathermap.org/img/wn/${weather.weather[0].icon}@4x.png`} />}
+            {weather && weather.main && weather.main.temp && <div className={style.size}>{weather.main.temp}°C</div>}
+            {weather && weather.weather && weather.weather[0] && weather.weather[0].description && <div className={style.description}>{weather.weather[0].description}</div>}
+            
         </div>
 
     )

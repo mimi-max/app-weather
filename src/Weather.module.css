@@ -1,0 +1,24 @@
+.content{
+    text-align: center;
+    padding-bottom: 20px;
+    font-family:  'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+}
+.img {
+    filter: drop-shadow(5px 7px 10px rgba(0, 0, 0, 0.4))
+}
+.size{
+    font-size: 41px;
+    padding-bottom:24px ;
+}
+.description{
+    font-size: 20px;
+    font-weight: bolder;
+    text-transform: capitalize
+}
+.city{
+    font-size: 30px;
+    font-weight: bolder;
+    text-transform: capitalize
+}

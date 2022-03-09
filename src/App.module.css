@@ -1,0 +1,16 @@
+.container{
+    background: #2C3A47;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.day{
+    background: linear-gradient(135deg, rgba(255,255,255,1) 0%, rgba(255,254,235,1) 13%, rgba(70,218,238,1) 46%, rgba(70,196,244,1) 59%, rgba(0,147,255,1) 100%);
+
+}
+.night{
+    background: linear-gradient(177deg, rgba(255,255,255,1) 0%, rgba(0,0,71,1) 0%, rgba(50,95,136,1) 83%, rgba(95,134,166,1) 100%);
+
+}
